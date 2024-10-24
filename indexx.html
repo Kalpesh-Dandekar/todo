@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="WEB.CSS">
+    <!-- Include jsPDF from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="Todo-app">
+            <h2>TO-DO LIST <img src="img/icon.png" alt="Icon"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add Your Text">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container">
+                <!-- Task list will be populated here -->
+            </ul>
+            <button id="convertToPDF" style="display:none;" onclick="convertToPDF()">Convert to PDF</button>
+        </div>
+    </div>
+
+    <script src="pd2.js"></script>
+</body>
+</html>
