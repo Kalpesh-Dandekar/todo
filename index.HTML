@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List Login</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(to right, #ffcc00, #ff9900);
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #ff6600;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ff4d00;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>To-Do List Login</h2>
+    <input type="text" id="username" placeholder="Enter username" required>
+    <input type="password" id="password" placeholder="Enter password" required>
+    <button onclick="checkCredentials()">Login</button>
+  </div>
+
+  <script>
+    function checkCredentials() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      // Replace this with your actual username and password verification logic
+      if (username === "Kalpesh" && password === "ABC") {
+        window.location.href = "pd2.HTML"; // Redirect to the main page
+      } else {
+        alert("Incorrect username or password.");
+      }
+    }
+  </script>
+
+</body>
+</html>
